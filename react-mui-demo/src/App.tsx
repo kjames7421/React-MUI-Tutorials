@@ -1,15 +1,15 @@
 import { createTheme, ThemeProvider, colors } from '@mui/material'
-import AdapterDateFns from '@mui/lab/AdapterDateFns'
-import { LocalizationProvider } from '@mui/lab'
+// import AdapterDateFns from '@mui/lab/AdapterDateFns'
+// import { LocalizationProvider } from '@mui/lab'
 import './App.css'
-// import { MuiTable } from './components/MuiTable'
-import { MuiCustomTheme } from './components/MuiCustomTheme'
+import { MuiTable } from './components/MuiTable'
+// import { MuiCustomTheme } from './components/MuiCustomTheme'
 
 // import { MuiTypography } from './components/MuiTypography'
 // import { MuiButton } from './components/MuiButton'
-// import { MuiTextField } from './components/MuiTextField'
+import { MuiTextField } from './components/MuiTextField'
 // import { MuiSelect } from './components/MuiSelect'
-// import { MuiRadioButton } from './components/MuiRadioButton'
+import { MuiRadioButton } from './components/MuiRadioButton'
 // import { MuiCheckbox } from './components/MuiCheckbox'
 // import { MuiSwitch } from './components/MuiSwitch'
 // import { MuiRating } from './components/MuiRating'
@@ -58,14 +58,14 @@ const theme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <LocalizationProvider dateAdapter={AdapterDateFns}>
+    // <ThemeProvider theme={theme}>
+      // <LocalizationProvider dateAdapter={AdapterDateFns}>
         <div className='App'>
           {/* <MuiTypography /> */}
           {/* <MuiButton /> */}
           {/* <MuiTextField /> */}
           {/* <MuiSelect /> */}
-          {/* <MuiRadioButton /> */}
+          <MuiRadioButton />
           {/* <MuiCheckbox /> */}
           {/* <MuiSwitch /> */}
           {/* <MuiRating /> */}
@@ -97,10 +97,10 @@ function App() {
           {/* <MuiDateRangePicker /> */}
           {/* <MuiMasonry /> */}
           {/* <MuiTimeline /> */}
-          <MuiCustomTheme />
+          {/* <MuiCustomTheme /> */}
         </div>
-      </LocalizationProvider>
-    </ThemeProvider>
+    //   </LocalizationProvider>
+    // </ThemeProvider>
   )
 }
 

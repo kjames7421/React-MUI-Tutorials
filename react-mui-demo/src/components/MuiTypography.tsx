@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material'
-
+import '../App.css';
 export const MuiTypography = () => {
   return (
     <div>
@@ -13,7 +13,7 @@ export const MuiTypography = () => {
       <Typography variant='h6'>h6 Heading</Typography>
       <Typography variant='subtitle1'>subtitle1</Typography>
       <Typography variant='subtitle2'>subtitle2</Typography>
-      <Typography>
+      <Typography className="practice">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam saepe
         magnam illo quas illum minus, aperiam, iusto optio quisquam veniam
         obcaecati quasi libero aspernatur alias quia modi minima excepturi ad.
@@ -26,3 +26,6 @@ export const MuiTypography = () => {
     </div>
   )
 }
+
+
+export default MuiTypography;

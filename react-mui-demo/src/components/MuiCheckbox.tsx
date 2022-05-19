@@ -16,6 +16,7 @@ export const MuiCheckbox = () => {
   console.log(skills)
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log('is it checked: ', event.target.checked);
     setAcceptTnC(event.target.checked)
   }
   const handleSkillChange = (event: React.ChangeEvent<HTMLInputElement>) => {
