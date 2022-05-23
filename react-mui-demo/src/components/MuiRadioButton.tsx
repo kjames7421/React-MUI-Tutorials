@@ -67,7 +67,6 @@ export const MuiRadioButton = () => {
       sx={{  display: "flex",
       // justifyContent: "center",
       alignItems: "center",
-      // textAlign: "center",
       // verticalAlign: "middle",
 
       borderRadius: "25px",
